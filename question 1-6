@@ -1,0 +1,197 @@
+1.)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int keeplooping = 2;
+            do
+            {
+                Console.WriteLine(keeplooping);
+                keeplooping++;
+
+            }
+            while (keeplooping > 0);
+
+        }
+    }
+}
+
+2.)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 2;
+            {
+                Console.WriteLine("[{0}]", x);
+                x++;
+            }
+
+            {
+                int y = 4;
+
+                {
+
+
+                    Console.WriteLine("[{0}]", y);
+                    y++;
+
+                
+                }
+                
+                int z = 8;
+                {
+                    Console.WriteLine("[{0}]", z);
+                    z++;
+                    
+                }
+                int a = 16;
+                {
+                    Console.WriteLine("[{0}]", a);
+                    a++;
+                }
+                int b = 32;
+                {
+                    Console.WriteLine("[{0}]", b);
+                    b++;
+                }
+                
+                int c = 64;
+                {
+                    Console.WriteLine("[{0}]", c);
+                    c++;
+                }
+                int d = 128;
+                {
+                    Console.WriteLine("[{0}]", d);
+                    d++;
+                }
+            }
+        }
+    }
+}
+
+3.)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            {
+                for (int i = 49; i >= 1; i--)
+                {
+                    Console.WriteLine(i + (i != 1 ? "," : ""));
+                }
+
+                Console.ReadLine();
+            }
+        }
+    }
+}
+
+4.)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Basics
+{
+    class OddNum
+    {
+        static void Main()
+        {
+            //int i = 0;
+            for (int i = 0; i <= 21; i++)
+                if (i % 2 != 0)
+                {
+                    Console.WriteLine(i);
+                }
+            Console.ReadLine();
+        }
+    }
+}
+
+5.)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp13
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 8;
+            int i = 10; // initialize
+            do
+            {
+                Console.Write("*");
+                i++; // update!
+            } while (i < n); // test condition
+
+            //The "do while" loop only outputs a single “*”
+            //the "while" loop doesn’t output anything 
+            //The "while" loop will check the condi±on before execu±ng the program
+            //and the "do while" will execute the program then check the condi±on after
+        }
+    }
+}
+
+6.)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp15
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            {
+                bool icyRain = false; bool tornadoWarning = false;
+                if (!icyRain && !tornadoWarning)
+                {
+                    Console.WriteLine("Let's Go Outside!");
+                }
+            }
+            {
+                bool icyRain = true; bool tornadoWarning = true;
+                if (!(icyRain || tornadoWarning))
+                    {
+                    Console.WriteLine("Let's Go Outside!");
+                }
+            }
+        }
+    }
+}
